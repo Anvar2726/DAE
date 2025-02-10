@@ -1,0 +1,144 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.advertising-box {
+  background-color: var(--color3);
+  padding: 10px 0;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hide-advertising-box {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.advertising-box p {
+  color: var(--color2);
+  font-size: 17px;
+  line-height: 27.2px;
+}
+
+.header-nav {
+  background-color: var(--white);
+}
+
+.header-nav-box {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.header-nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-nav-link {
+  color: var(--secondary-text);
+  font-size: 18px;
+  line-height: 28.8px;
+  text-transform: capitalize;
+}
+
+.header-logo {
+  margin-right: 20%;
+}
+
+.user-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 43px;
+}
+
+.user-panel div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 876px) {
+  .header-nav-box {
+    position: relative;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .header-logo {
+    margin-right: -20%;
+  }
+
+  .header-nav-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    width: 60%;
+    min-height: 100vh;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .header-nav-item-show {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .user-panel a {
+    display: none;
+  }
+  .header-logo {
+    margin-right: -5%;
+  }
+  .advertising-box p {
+    font-size: 12px;
+    line-height: 10px;
+  }
+}

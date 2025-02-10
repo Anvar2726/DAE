@@ -1,0 +1,113 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.footer {
+  background-color: var(--color1);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-box-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 120px;
+}
+
+.footer-box-left div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.footer-link {
+  color: var(--primary-text);
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+.footer-text {
+  color: var(--tertiary-text);
+  font-size: 14px;
+  line-height: 22.4px;
+}
+
+.footer-subscribe-box {
+  border: 2px solid rgb(181, 97, 77);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 5px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.footer-subscribe-box input {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+.footer-subscribe-box button {
+  color: var(--primary-text);
+}
+
+.footer-copyright{
+    border-top: 1px solid  rgb(241, 211, 185);
+    padding: 18px 0;
+    text-align: center;
+    color: var(--tertiary-text);
+}
+
+
+@media (max-width: 800px) {
+  .footer-box-left {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .footer-box-left{
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
